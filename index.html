@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+	<head>
+		<title>Weather Dashboard</title>
+		<link href="content/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="content/css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="content/css/custom.css" rel="stylesheet" />
+		<script src="vendor/jquery.min.js"></script>
+		<script src="vendor/bootstrap.min.js"></script>
+		<script src="vendor/angular.js"></script>
+		<script src="vendor/angular-route.js"></script>
+		<script src="vendor/highcharts.js"></script>
+		
+		<script src="app/app.module.js"></script> <!-- MAIN MODULE OF THE APP -->
+		
+		<script src="app/layout/shell.module.js"></script> <!-- THE MODULE FOR THE LAYOUT -->
+		<script src="app/layout/shell.controller.js"></script> <!-- CONTROLLER OF THE LAYOUT'S MODULE -->
+		
+		<script src="app/search/search.module.js"></script> <!-- MODULE AND CONTROLLER FOR THE SEARCH -->
+		<script src="app/search/search.controller.js"></script>
+		
+		<script src="app/weather/weather.module.js"></script> <!-- MODULE AND CONTROLLER FOR THE WEATHER -->
+		<script src="app/weather/weather.controller.js"></script>
+		
+		<script src="app/forecast/forecast.module.js"></script> <!-- MODULE AND CONTROLLER FOR THE FORECAST -->
+		<script src="app/forecast/forecast.controller.js"></script>
+		
+		<script src="app/component/component.module.js"></script> <!-- CUSTOM SEARCH DIRECTIVE -->
+		<script src="app/component/search.view.js"></script>
+		
+		<script src="app/data/data.module.js"></script> <!-- CUSTOM WEATHER SERVICE MODULE AND CONTROLLER -->
+		<script src="app/data/weather.service.js"></script>
+		
+		<script src="app/forecast/forecast.view.js"></script> <!-- CUSTOM CHART DIRECTIVE -->
+		
+		<script src="app/data/weather.config.js"></script> <!-- FOR REUSABLE ELEMENTS -->
+	</head>
+	<body>
+		<ng-include src="'app/layout/shell.html'"></ng-include>
+	</body>
+</html>
